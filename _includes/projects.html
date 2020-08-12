@@ -1,5 +1,11 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">My GitHub repositories</p>
+<p style="text-align:justify" class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  Right now I am working on my final thesis for the physics degree. The title is: Neural networks solutions for the quantum many-body problem.
+  Basically I am making use of a library named NetKet (https://www.netket.org/) to try to make a simple NN structure like a RBM or a FFNN learn the fundamental state of a given system.
+
+  I don't have almost any GitHub repositories but if there are any they should appear down here:
+
+</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
