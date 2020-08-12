@@ -1,0 +1,32 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Presentation</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  I'm a physics degree student who loves technology. I am interested in new fields like blockchain or IoT but my main purpose is to build a career into AI. I like developing software solutions and I like applying my math/physics knowledge to problem solving so I thought disciplines like Machine Learning or Data Science could fit me well. I'm also a hardware enthusiast and love keeping up with the new awesome tech arriving the market each year!
+
+  First I was taught in C/C++ as it is the main language used for numerical problem solving in my degree. In 2018 I got a summer course at Hiberus as an ASP .NET Core web developer. I found building web applications very entertaining but also felt I was missing the opportunity to make use of a big part of the things I learnt studying physics.
+  Last year I was an intern at Everis for 6 months. I was part of the Artificial Intelligence team in a SKM proyect named Everis Knowler where our main goal was to deploy, mantain and improve recommender systems for the product. There I had to improve my Python capabilities and more importantly I learnt about some very powerful libraries like Pandas or NumPy. Also it was very useful to learn about agile methodologies and how big teams organize in large companies. 
+</p>
+<!-- <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% if site.projects.sort_by == 'stars' %}
+    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% else %}
+    {% assign sort_order = 'pushed_at' %}
+  {% endif %}
+
+  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% else %}
+    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+  {% endif %}
+
+  {% for repository in filtered_repos | limit: site.projects.limit %}
+    {% unless site.projects.exclude.projects contains repository.name %}
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        {% include repo-card.html %}
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div> -->
