@@ -50,16 +50,12 @@
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+    <div>
+      <form action="https://mikelesc.github.io/_data/cv.pdf" download>
+            <input type="submit" value="Go to CV" />
+        </form>
+      
+        <!-- <a href="https://mikelesc.github.io/cv.pdf" download>ewse</a> -->
+        </div>
   </div>
-  <div>
-    <span href="../_data/cv.pdf" title="resume" class="d-inline-block f5 rounded-2 text-black bg-red py-1 px-2">Get my CV</span>
-
-    <form action="https://mikelesc.github.io/cv.pdf" download>
-      <input type="submit" value="Go to CV" />
-  </form>
-
-  <a href="https://mikelesc.github.io/cv.pdf" download>ewse</a>
-  </div>
-
-
 {% endif %}
