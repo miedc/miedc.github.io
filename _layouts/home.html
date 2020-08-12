@@ -16,9 +16,9 @@
       {% include projects.html %}
     </div>
 
-    <!-- {% if site.topics %}
+    {% if site.topics %}
       <div class="my-6">
-        {% include interests.html %} -->
+        {% include interests.html %}
       </div>
     {% endif %}
 
@@ -41,6 +41,8 @@
             {{ content }}
           </div>
         {% endunless %}
+
+        {% include intro.html %}
 
         {% include projects.html %}
 
