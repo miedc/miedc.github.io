@@ -49,9 +49,9 @@
     {% endif %}
     {% if user.hireable %}
       <!-- <form class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2" action="https://mikelesc.github.io/cv.pdf" download>Get my CV</form> -->
-      <form action="https://mikelesc.github.io/cv.pdf" download>
-          <input type="submit" value="Get my CV" />
-      </form>
+      <a href="./cv.pdf" download="cv.pdf">
+        <button>Download my CV</button>
+      </a>
     {% endif %}
   </div>
 {% endif %}
